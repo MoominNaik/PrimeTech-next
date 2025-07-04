@@ -21,8 +21,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="sticky top-0 left-0 w-full z-50 bg-black shadow-md">
           <Navbar />
-          <FeaturesNavbar/>
+          
           <div className="hidden md:block">
+          <FeaturesNavbar/>
           </div>
         </div>
         {children}

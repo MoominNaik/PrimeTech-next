@@ -18,13 +18,7 @@ const FeaturesNavbar = () => {
 
   return (
     <nav className="
-      w-full
-      bg-black
-      pb-5 pt-3
-      flex justify-center
-      shadow-lg
-      z-[999]
-      font-oswald
+      w-full bg-black pb-5 pt-3 flex justify-center shadow-lg z-[999] font-oswald
     ">
       <div className="flex items-center justify-center space-x-8">
         {links.map((link) => (
