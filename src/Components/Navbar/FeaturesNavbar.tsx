@@ -1,19 +1,21 @@
 'use client';
 
-import React from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import React from 'react';
+import Link from 'next/link';
+import { useSelectedLayoutSegments } from 'next/navigation';
 
 const FeaturesNavbar = () => {
-  const pathname = usePathname();
+  // Returns an array of the active route’s segments, e.g. ["AlarmSystems"]
+  const segments = useSelectedLayoutSegments();
+  const current = segments ? (segments.length > 0 ? `/${segments[0]}` : '') : ''; // '' for the home route
 
   const links = [
-    { href: "/AlarmSystems", label: "Alarm Systems" },
-    { href: "/NetworkCabling", label: "Network Cabling" },
-    { href: "/AccessControl", label: "Access Control" },
-    { href: "/Cameras", label: "Cameras" },
-    { href: "/AutomaticDoors", label: "Automatic Doors" },
-    { href: "/DigitalSignage", label: "Digital Signage" },
+    { href: '/AlarmSystems',     label: 'Alarm Systems' },
+    { href: '/NetworkCabling',  label: 'Network Cabling' },
+    { href: '/AccessControl',   label: 'Access Control' },
+    { href: '/Cameras',         label: 'Cameras' },
+    { href: '/AutomaticDoors',  label: 'Automatic Doors' },
+    { href: '/DigitalSignage',  label: 'Digital Signage' },
   ];
 
   return (
@@ -21,13 +23,13 @@ const FeaturesNavbar = () => {
       w-full bg-black pb-5 pt-3 flex justify-center shadow-lg z-[999] font-oswald
     ">
       <div className="flex items-center justify-center space-x-8">
-        {links.map((link) => (
+        {links.map(link => (
           <Link
             key={link.href}
             href={link.href}
             className={`px-4 py-2 transition-colors duration-200 ${
-              pathname === link.href 
-                ? 'text-red-600 hover:text-red-600' 
+              current === link.href
+                ? 'text-red-600 hover:text-red-600'
                 : 'text-white hover:text-red-600'
             }`}
           >
