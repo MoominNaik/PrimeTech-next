@@ -3,7 +3,11 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/Components/Navbar/Navbar'
 import Footer from '@/Components/Footer/Footer'
-import FeaturesNavbar from '@/Components/Navbar/FeaturesNavbar'
+import dynamic from 'next/dynamic';
+
+const FeaturesNavbar = dynamic(() => import('@/Components/Navbar/FeaturesNavbar'), {
+  ssr: false,
+});
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
