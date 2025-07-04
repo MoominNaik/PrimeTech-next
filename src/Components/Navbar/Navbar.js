@@ -17,7 +17,6 @@ const ChevronDownIcon = ({ className = "" }) => (
 const Navbar = () => {
   const [isFeaturesOpen, setIsFeaturesOpen] = useState(false);
   const [line, setLine] = useState("Services");
-  const pathname = usePathname();
 
   const toggleFeatures = () => {
     setIsFeaturesOpen(!isFeaturesOpen);
