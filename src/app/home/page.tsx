@@ -25,8 +25,8 @@ export const metadata = {
 
 
 import React from 'react';
-import MainBanner from '@/components/MainBanner/MainBanner';
-import Cards from '@/components/Cards/Cards';
+import MainBanner from '@/Components/MainBanner/MainBanner';
+import Cards from '@/Components/Cards/Cards';
 import WhyChooseAlarm from '@/Components/Services/AlarmSystems/WhyChoseAlarm.js';
 import WhyChooseNetworkCabling from '@/Components/Services/NetworkCabling/WhyChoseNetworkCabling.js';
 import WhyChooseAccessControl from '@/Components/Services/AccessControl/WhyChooseAccessControl.js';

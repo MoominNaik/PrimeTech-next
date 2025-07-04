@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import GetQuoteForm from '@/components/GetQuote/GetQuoteForm';
-import ContactInfo from '@/components/ContactInfo/ContactInfo';
+import GetQuoteForm from '@/Components/GetQuote/GetQuoteForm';
+import ContactInfo from '@/Components/ContactInfo/ContactInfo';
 
 const Ask = () => {
   const headingClasses = "text-white text-2xl md:text-3xl mb-2.5 font-extrabold font-bebas tracking-[0.5px]";
