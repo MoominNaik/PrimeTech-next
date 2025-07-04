@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import logo from "../../Components/Assets/logo.png"; // Ensure alias setup and file is in /src/Assets
 
 

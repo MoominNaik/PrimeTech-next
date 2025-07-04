@@ -37,6 +37,7 @@ const GetQuoteForm = () => {
         setStatus("error");
       }
     } catch (err) {
+      console.error("Form submission error:", err);
       setStatus("error");
     }
   };

@@ -17,7 +17,7 @@ const Ask = () => {
           Request a Quote for IT Infrastructure or Security Installation
         </h1>
         <p className={paragraphClasses}>
-          Tell us about your project — whether it's alarm systems, access control, cameras, network cabling, or digital signage — and we'll provide a detailed estimate.
+          Tell us about your project — whether it&apos;s alarm systems, access control, cameras, network cabling, or digital signage — and we&apos;ll provide a detailed estimate.
         </p>
       </div>
 
