@@ -1,0 +1,142 @@
+/* Alarm Page Container */
+.alarm-page {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: white;
+    min-height: 100vh;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 92vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.digital-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4); /* Dim the image for readability */ /* Dim the image for readability */
+}
+
+.banner-overlay {
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.banner-overlay h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.banner-overlay p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+
+.consult-btn {
+    margin-top: 100px;
+    background: black;
+    color: white;
+    padding: 18px 40px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.consult-btn:hover {
+    color: #ff3333;
+    transform: scale(1.05); /* Grow the button on hover */
+    transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+}
+
+
+/* Consultation Section */
+.consultation-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f0f0f0;
+}
+
+.consultation-section h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.consultation-section p {
+    font-size: 1.3em;
+    color: #555;
+    margin: 15px 0;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-overlay h1 {
+        font-size: 2em;
+    }
+
+    .banner-overlay p {
+        font-size: 1.1em;
+    }
+
+    .consult-btn {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}
+
+
+
+.opener-h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.8px;
+    font-size: 32px;
+    color: #000;
+    margin-top: 280px;
+    margin-bottom: 50px;
+    text-align: center; /* Center the text horizontally */
+    width: 100%; /* Ensure it takes full width for centering */
+}
